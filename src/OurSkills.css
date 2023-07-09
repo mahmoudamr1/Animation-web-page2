@@ -1,0 +1,51 @@
+.our-skills {
+    padding-bottom: 100px;
+
+}
+
+.our-skills .container {
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    justify-content: space-between;
+
+
+}
+
+.our-skills .skills {
+    flex: 1;
+}
+
+.our-skills .skills .skill {
+    margin: 10px 0;
+}
+
+.our-skills .skill h3 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 19px;
+    font-weight: bold;
+}
+
+.our-skills .skill h3 span {
+    font-size: 12px;
+    border: 1px solid #ccc;
+    padding: 3px 5px;
+    border-radius: 4px;
+    color: var(--main-color);
+}
+
+@media (max-width:991px) {
+    .our-skills .container img {
+        display: none;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) .progress-bar-animated {
+    /* animation: none; */
+}
+
+.our-skills .the-progress div {
+    height: 30px !important;
+}

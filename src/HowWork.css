@@ -1,0 +1,89 @@
+.work-steps {
+    padding-bottom: 100px;
+    background-color: var(--section-background);
+}
+
+.work-steps .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 23px;
+
+}
+
+@media (max-width: 991px) {
+    .work-steps .container {
+        flex-direction: column;
+    }
+
+}
+
+@media (max-width: 767px) {
+    .work-steps .container .info .box {
+        flex-direction: column;
+        text-align: center;
+
+    }
+
+}
+
+.work-steps .image {
+    max-width: 100%;
+}
+
+.work-steps .container .info {
+    display: flex;
+    flex-direction: column;
+}
+
+.work-steps .container .info .box {
+    background-color: #f6f5f5;
+    gap: 20px;
+    margin-bottom: 22px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    flex: 1;
+    padding: 30px;
+    border: solid 4px white;
+    position: relative;
+    border-radius: 10px;
+    transition: .4s;
+    z-index: 1;
+}
+
+.work-steps .container .info .box::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 0;
+    height: 0;
+    background-color: #ededed;
+    transition: .4s;
+    border-radius: 10px;
+    z-index: -1;
+}
+
+.work-steps .container .info .box:hover::before {
+    width: 100%;
+    height: 100%;
+
+}
+
+.work-steps .container .info .box img {
+    width: 64px;
+}
+
+.work-steps .container .info .box .text {}
+
+.work-steps .container .info .box .text h3 {
+    color: var(--main-color);
+    font-weight: bold;
+}
+
+.work-steps .container .info .box .text p {
+    line-height: 1.5;
+    color: #777;
+}
